@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Example 5</title>
+    <meta charset="utf-8" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background-color:#EEEFF1;
+            direction:rtl;
+            font-family:sans-serif;
+        }
+        #menu {
+            margin: 50px auto;
+            background-color: #F7F7F7;
+            border:1px solid #ccc;
+            line-height:40px;
+            width:1000px;
+            position:relative;
+            font-size:14px;
+        }
+        .item{
+            float:right;
+            padding:0 40px;
+            text-align:center;
+        }
+        #menu::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        #menu a{
+            display:block;
+            color:#333;
+            text-decoration:none;
+        }
+        #menu a:hover{
+            color:red;
+        }
+         .submenu{
+            background-color:white;
+            width:1000px;
+            position:absolute;
+            right:-1px;
+            top:100%;
+            display:none;
+            border:1px solid #ccc;
+            font-size:13px;
+        }
+        .item:hover .submenu{
+            display:block;
+        }
+        .subitem{
+            float:right;
+            padding:0 40px;
+            text-align:center;
+        }
+        .details{
+            display:none;
+            border:1px solid #ccc;
+            width:1000px;
+            background-color:#f4f4f4;
+            position:absolute;
+            right:-1px;
+            top:100%;
+            line-height:25px;
+        }
+        .subitem:hover .details{
+            display:block;
+        }
+        .details ul{
+            float:right;
+            padding:10px 0;
+            font-size:12px;
+            width:249px;
+            border-right:1px solid #ccc;
+            text-align:right;
+        }
+        .details h3{
+            font-size:14px;
+            color:#1cf;
+            font-weight:normal;
+            padding-right:15px;
+        }
+        .details a{
+            padding-right:30px;
+        }
+        .details ul:first-child{
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Multi-Level Large Menu -->
+    <ul id="menu">
+        <li class="item"><a href="#">کالای دیجیتال</a>
+            <ul class="submenu">
+                <li class="subitem"><a href="#">موبایل</a>
+                    <div class="details">
+                        <ul>
+                            <li><h3>گوشی موبایل</h3></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">LG</a></li>
+                            <li><a href="#">HTC</a></li>
+                            <li><a href="#">Sony</a></li>
+                            <li><a href="#">Huawei</a></li>
+                            <li><a href="#">Alcatel</a></li>
+                            <li><a href="#">ASUS</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">Dimo</a></li>
+                            <li><a href="#">Smart</a></li>
+                            <li><a href="#">مشاهده موارد بیشتر</a></li>
+                        </ul>
+                        <ul>
+                            <li><h3>گوشی موبایل</h3></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">LG</a></li>
+                            <li><a href="#">HTC</a></li>
+                            <li><a href="#">Sony</a></li>
+                            <li><a href="#">Huawei</a></li>
+                            <li><a href="#">Alcatel</a></li>
+                            <li><a href="#">ASUS</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">Dimo</a></li>
+                            <li><a href="#">Smart</a></li>
+                            <li><a href="#">مشاهده موارد بیشتر</a></li>
+                        </ul>
+                        <ul>
+                            <li><h3>گوشی موبایل</h3></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">LG</a></li>
+                            <li><a href="#">HTC</a></li>
+                            <li><a href="#">Sony</a></li>
+                            <li><a href="#">Huawei</a></li>
+                            <li><a href="#">Alcatel</a></li>
+                            <li><a href="#">ASUS</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">Dimo</a></li>
+                            <li><a href="#">Smart</a></li>
+                            <li><a href="#">مشاهده موارد بیشتر</a></li>
+                        </ul>
+                        <ul>
+                            <li><h3>گوشی موبایل</h3></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">LG</a></li>
+                            <li><a href="#">HTC</a></li>
+                            <li><a href="#">Sony</a></li>
+                            <li><a href="#">Huawei</a></li>
+                            <li><a href="#">Alcatel</a></li>
+                            <li><a href="#">ASUS</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">Dimo</a></li>
+                            <li><a href="#">Smart</a></li>
+                            <li><a href="#">مشاهده موارد بیشتر</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </li>
+        <li class="item"><a href="#">لوازم خانگی</a>
+            <ul class="submenu">
+                <li class="subitem"><a href="#">صوتی و تصویری</a></li>
+                <li class="subitem"><a href="#">لوازم خانگی برقی</a></li>
+                <li class="subitem"><a href="#">آشپزخانه</a></li>
+                <li class="subitem"><a href="#">سرو و پذیرایی</a></li>
+                <li class="subitem"><a href="#">دکوراتیو</a></li>
+            </ul>
+        </li>
+        <li class="item"><a href="#">زیبایی و سلامت</a>
+            <ul class="submenu">
+                <li class="subitem"><a href="#">عطر</a></li>
+                <li class="subitem"><a href="#">لوازم آرایشی</a></li>
+                <li class="subitem"><a href="#">لوازم بهداشتی</a></li>
+                <li class="subitem"><a href="#">لوازم شخصی برقی</a></li>
+                <li class="subitem"><a href="#">ساعت</a></li>
+            </ul>
+        </li>
+        <li class="item"><a href="#">فرهنگ و هنر</a>
+            <ul class="submenu">
+                <li class="subitem"><a href="#">کتاب و مجلات</a></li>
+                <li class="subitem"><a href="#">لوازم التحریر</a></li>
+                <li class="subitem"><a href="#">صنایع دستی</a></li>
+                <li class="subitem"><a href="#">فرش دستباف</a></li>
+                <li class="subitem"><a href="#">آلات موسیقی</a></li>
+            </ul>
+        </li>
+        <li class="item"><a href="#">ورزش و سرگرمی</a>
+            <ul class="submenu">
+                <li class="subitem"><a href="#">پوشاک ورزشی</a></li>
+                <li class="subitem"><a href="#">کفش ورزشی</a></li>
+                <li class="subitem"><a href="#">لوازم ورزشی</a></li>
+                <li class="subitem"><a href="#">دوچرخه و لوازم جانبی</a></li>
+                <li class="subitem"><a href="#">تجهیزات سفر</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

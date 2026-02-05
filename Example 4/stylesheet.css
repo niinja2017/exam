@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#menu {
+    margin: 50px;
+    width: 160px;
+}
+
+#menu a {
+    color: black;
+    padding: 0 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.item,
+.subitem {
+    line-height: 200%;
+    background-color: #eee;
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 160px
+}
+
+.item:hover>.submenu,
+.subitem:hover>.submenu {
+    display: block;
+}
+
+.item:hover,
+.subitem:hover {
+    background-color: #ddd;
+}

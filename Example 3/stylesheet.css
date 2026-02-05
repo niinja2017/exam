@@ -1,0 +1,22 @@
+html{
+    font-size: 40px;
+}
+
+body{
+    font-size: 20px;
+}
+
+div{
+    background-color: black;
+}
+h2{
+    color: white;
+}
+p{
+    color: black;
+    background-color: aqua;
+    /* font-size: 3em;
+    font-size: 150%;
+    width: 30%;
+    width: 5rem; */
+}
