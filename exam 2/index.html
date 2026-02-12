@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title>Example 5</title>
     <meta charset="utf-8" />
@@ -9,91 +10,99 @@
             padding: 0;
             list-style: none;
         }
-        body{
-            background-color:#EEEFF1;
-            direction:rtl;
-            font-family:sans-serif;
+
+        body {
+            background-color: #EEEFF1;
+            direction: rtl;
+            font-family: sans-serif;
         }
+
         #menu {
             margin: 50px auto;
             background-color: #F7F7F7;
-            border:1px solid #ccc;
-            line-height:40px;
-            width:1000px;
-            position:relative;
-            font-size:14px;
+            border: 1px solid #ccc;
+            line-height: 40px;
+            width: 1000px;
+            position: relative;
+            font-size: 14px;
+            display: flex;
         }
-        .item{
-            float:right;
-            padding:0 40px;
-            text-align:center;
+
+        .item {
+            padding: 0 40px;
+            text-align: center;
         }
-        #menu::after{
-            content:'';
-            display:block;
-            clear:both;
+
+        #menu a {
+            display: block;
+            color: #333;
+            text-decoration: none;
         }
-        #menu a{
-            display:block;
-            color:#333;
-            text-decoration:none;
+
+        #menu a:hover {
+            color: red;
         }
-        #menu a:hover{
-            color:red;
+
+        .submenu {
+            background-color: white;
+            width: 1000px;
+            position: absolute;
+            right: -1px;
+            top: 100%;
+            display: none;
+            border: 1px solid #ccc;
+            font-size: 13px;
         }
-         .submenu{
-            background-color:white;
-            width:1000px;
-            position:absolute;
-            right:-1px;
-            top:100%;
-            display:none;
-            border:1px solid #ccc;
-            font-size:13px;
+
+        .item:hover .submenu {
+            display: flex;
         }
-        .item:hover .submenu{
-            display:block;
+
+        .subitem {
+            padding: 0 40px;
+            text-align: center;
         }
-        .subitem{
-            float:right;
-            padding:0 40px;
-            text-align:center;
+
+        .details {
+            display: none;
+            border: 1px solid #ccc;
+            width: 1000px;
+            background-color: #f4f4f4;
+            position: absolute;
+            right: -1px;
+            top: 100%;
+            line-height: 25px;
         }
-        .details{
-            display:none;
-            border:1px solid #ccc;
-            width:1000px;
-            background-color:#f4f4f4;
-            position:absolute;
-            right:-1px;
-            top:100%;
-            line-height:25px;
+
+        .subitem:hover .details {
+            display: flex;
         }
-        .subitem:hover .details{
-            display:block;
+
+        .details ul {
+            padding: 10px 0;
+            font-size: 12px;
+            width: 249px;
+            border-right: 1px solid #ccc;
+            text-align: right;
         }
-        .details ul{
-            float:right;
-            padding:10px 0;
-            font-size:12px;
-            width:249px;
-            border-right:1px solid #ccc;
-            text-align:right;
+
+        .details h3 {
+            font-size: 14px;
+            color: #1cf;
+            font-weight: normal;
+            padding-right: 15px;
         }
-        .details h3{
-            font-size:14px;
-            color:#1cf;
-            font-weight:normal;
-            padding-right:15px;
+
+        .details a {
+            padding-right: 30px;
         }
-        .details a{
-            padding-right:30px;
-        }
-        .details ul:first-child{
-            border:none;
+
+        .details ul:first-child {
+            border: none;
         }
     </style>
 </head>
+
 <body>
     <!-- Multi-Level Large Menu -->
     <ul id="menu">
@@ -102,7 +111,9 @@
                 <li class="subitem"><a href="#">موبایل</a>
                     <div class="details">
                         <ul>
-                            <li><h3>گوشی موبایل</h3></li>
+                            <li>
+                                <h3>گوشی موبایل</h3>
+                            </li>
                             <li><a href="#">Apple</a></li>
                             <li><a href="#">Samsung</a></li>
                             <li><a href="#">LG</a></li>
@@ -117,7 +128,9 @@
                             <li><a href="#">مشاهده موارد بیشتر</a></li>
                         </ul>
                         <ul>
-                            <li><h3>گوشی موبایل</h3></li>
+                            <li>
+                                <h3>گوشی موبایل</h3>
+                            </li>
                             <li><a href="#">Apple</a></li>
                             <li><a href="#">Samsung</a></li>
                             <li><a href="#">LG</a></li>
@@ -132,7 +145,9 @@
                             <li><a href="#">مشاهده موارد بیشتر</a></li>
                         </ul>
                         <ul>
-                            <li><h3>گوشی موبایل</h3></li>
+                            <li>
+                                <h3>گوشی موبایل</h3>
+                            </li>
                             <li><a href="#">Apple</a></li>
                             <li><a href="#">Samsung</a></li>
                             <li><a href="#">LG</a></li>
@@ -147,7 +162,9 @@
                             <li><a href="#">مشاهده موارد بیشتر</a></li>
                         </ul>
                         <ul>
-                            <li><h3>گوشی موبایل</h3></li>
+                            <li>
+                                <h3>گوشی موبایل</h3>
+                            </li>
                             <li><a href="#">Apple</a></li>
                             <li><a href="#">Samsung</a></li>
                             <li><a href="#">LG</a></li>
@@ -204,4 +221,5 @@
         </li>
     </ul>
 </body>
+
 </html>
