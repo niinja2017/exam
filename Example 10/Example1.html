@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Example 1</title>
+	<meta charset="utf-8" />
+    <style>
+        #outer{
+            border:2px solid black;
+            width:300px;
+            height:200px;
+            margin:100px;
+        }
+        #inner{
+            background:url('images/back.jpg');
+            opacity:0.6;
+            height:100%;
+            transition:2s;
+            /*transform-origin:0 0;*/
+        }
+        #outer:hover #inner {
+            /* transform: translateX(60px); */
+            /*transform: translateY(60px);*/
+            /*transform: translate(60px,50%);*/
+            transform: rotate(45deg);
+            /*transform: rotate(-35deg);*/
+            /*transform: rotate(370deg);*/
+            /*transform: scaleX(1.6);*/
+            /*transform: scaleY(1.6);*/
+            /*transform: scale(1.6);*/
+            /*transform: scale(1.2,2);*/
+            /*transform: skewX(30deg);*/
+            /* transform: skewX(180deg); */
+            /*transform: skewY(30deg);*/
+            /*transform: skew(30deg,40deg);*/
+            /* transform: scale(1.4,0.85) translateX(140px) rotate(15deg); */
+            /*transform: translateX(200px) rotate(30deg);*/
+            /*transform: rotate(30deg) translateX(200px);*/
+        }
+    </style>
+</head>
+<body>
+    <!-- 2D Transformations -->
+    <div id="outer">
+        <div id="inner"></div>
+    </div>
+</body>
+</html>

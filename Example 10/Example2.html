@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example 2</title>
+    <meta charset="utf-8" />
+    <style>
+        #outer {
+            border: 2px solid black;
+            width: 300px;
+            height: 200px;
+            margin: 100px;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            /*perspective-origin:0 0 20px;*/
+        }
+
+        #inner {
+            background-image: url('images/back.jpg');
+            opacity: 0.6;
+            height: 100%;
+            transition: 1.5s;
+            /*transform-origin:0 0 20px;*/
+        }
+
+        #outer:hover #inner {
+            /* transform: translateZ(60px); */
+            /*transform: rotateX(100deg);*/
+            /*transform: translateZ(-150px) rotateX(60deg);*/
+            transform: rotateY(70deg);
+            /*transform: rotateZ(160deg);*/
+            /*transform: scaleZ(2);*/
+            /*transform: rotateY(85deg) scaleZ(20);*/
+            /*transform: scaleZ(3) translateZ(60px);*/
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 3D Transformations -->
+    <div id="outer">
+        <div id="inner"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example 3</title>
+    <meta charset="utf-8" />
+    <style>
+        #inner div {
+            width: 500px;
+            height: 200px;
+            text-align: center;
+            font-size: 150px;
+            border: 1px solid black;
+            box-shadow: 0 0 15px 0 inset;
+            position:absolute;
+            background-color:rgba(255,255,255,0.7);
+        }
+        #outer {
+            margin:200px;
+            perspective:1000px;
+            width: 500px;
+            height: 200px;
+        }
+        #inner {
+            transition:2s;
+            transform-style:preserve-3d;
+            transform-origin:250px 100px -250px;
+        }
+        #div2 {
+            transform:translateX(250px) translateZ(-250px) rotateY(90deg);
+        }
+        #div3 {
+            transform: translateZ(-500px) rotateY(180deg);
+        }
+        #div4 {
+            transform:translateX(-250px) translateZ(-250px) rotateY(-90deg);
+        }
+        #outer:hover #inner {
+            transform: rotateY(90deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Rotate a cube -->
+    <div id="outer">
+        <div id="inner">
+            <div id="div1">1</div>
+            <div id="div2">2</div>
+            <div id="div3">3</div>
+            <div id="div4">4</div>
+        </div>
+    </div>
+</body>
+</html>

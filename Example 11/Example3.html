@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            width: 300px;
+            height: 200px;
+            margin: 50px;
+        }
+        img{
+            opacity: 0.7;
+            width: 300px;
+        }
+        @keyframes my-animation{
+            0%{
+                transform: translateX(0);
+            }
+            30%,60%{
+                transform: translateX(100px);
+            }
+            50%{
+                transform: translateX(50px);
+            }
+            100%{
+                transform: translate(100px) rotate(20deg);
+            }
+        }
+        img:hover{
+            animation-name: my-animation;
+            animation-duration: 5s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./images/back.jpg">
+    </div>
+</body>
+</html>
